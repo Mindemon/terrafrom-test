@@ -31,3 +31,22 @@ skip_region_validation = false
 skip_requesting_account_id = false
 }
 
+resource "aws_ami" "test"{
+name = "hehe1"
+description = "asd"
+root_device_name = "asd"
+virtualization_type = "asdas"
+architecture = "sdasd"
+tags = {
+Name = "STACK - test git"
+STACK_NAME = "test git"
+}
+}
+
+resource "aws_api_gateway_account" "zxc"{
+tags = {
+Name = "STACK - test git"
+STACK_NAME = "test git"
+}
+}
+
